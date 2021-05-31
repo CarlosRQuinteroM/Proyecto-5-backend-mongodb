@@ -1,5 +1,5 @@
 const mongoose = require('mongoose');
-const QUERY_STRING = "mongodb+srv://CarlosQuintero:CarlosQuintero@poyecto5.m2z9p.mongodb.net/chatFSD?retryWrites=true&w=majority";
+const QUERY_STRING = "mongodb+srv://reservas:reservas@reservas.ih0fj.mongodb.net/reservasDB?retryWrites=true&w=majority";
 
 // Connection to DB
 const db = mongoose.connect(QUERY_STRING,
