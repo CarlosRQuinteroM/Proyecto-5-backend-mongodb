@@ -7,6 +7,8 @@ const db = mongoose.connect(QUERY_STRING,
 .then(console.log('Conectado a la base de datos'))
 .catch((error) => console.log(error));
 
+//Hello world
+
 
 module.exports = db;
 
