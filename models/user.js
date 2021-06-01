@@ -6,6 +6,10 @@ const userSchema = new Schema({
         type: String,
         required: true
     },
+    surnames: {
+        type: String,
+        required: true
+    },
     email: {
         type: String,
         required: true,
@@ -16,8 +20,8 @@ const userSchema = new Schema({
         type: String,
         required: true
     },
-    birthday: {
-        type: Date,
+    phoneNumber: {
+        type: Strign,
         required: true
     },
     country: {
@@ -25,6 +29,10 @@ const userSchema = new Schema({
     },
     city: {
         type: String
+    },
+    birthday: {
+        type: Date,
+        required: true
     },
     isAdmin: {
         type: Boolean,
