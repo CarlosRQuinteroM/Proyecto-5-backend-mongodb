@@ -1,7 +1,7 @@
 const User = require('../models/user');
 const bcrypt = require('bcrypt');
 
-class Cliente {
+class Client {
 
     constructor(){
     }
@@ -19,5 +19,5 @@ class Cliente {
 
 
 
-let userController = new Cliente();
+let userController = new Client();
 module.exports = userController;
