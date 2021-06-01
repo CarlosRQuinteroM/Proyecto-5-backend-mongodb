@@ -7,7 +7,11 @@ const db = mongoose.connect(QUERY_STRING,
 .then(console.log('Conectado a la base de datos'))
 .catch((error) => console.log(error));
 
+<<<<<<< HEAD
+//Esta es la rama de Juanfe
+=======
 //esta es la rama de carlos
+>>>>>>> carlos
 
 
 module.exports = db;
