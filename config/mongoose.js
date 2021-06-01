@@ -7,7 +7,7 @@ const db = mongoose.connect(QUERY_STRING,
 .then(console.log('Conectado a la base de datos'))
 .catch((error) => console.log(error));
 
-//Esta es la rama de Juanfe
+
 
 
 module.exports = db;
