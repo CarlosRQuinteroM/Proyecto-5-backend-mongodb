@@ -17,7 +17,7 @@ class Client {
 
     async modifyUser(body) {
 
-        return User.update(
+        return User.findByIdAndUpdate(
             //Datos que cambiamos
             {
                 isAdmin: body.isAdmin,
@@ -25,14 +25,14 @@ class Client {
                 city: body.city
             },
             //Donde
-            { where: {id: body.id}}
+            {_id: body.id}
 
         )
     }
 
     async deleteUser(id){
 
-        return User.destroy({where: {id: id}});
+        return User.findByIdAndRemove({_id: id});
     }
 
 }
