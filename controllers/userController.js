@@ -15,6 +15,26 @@ class Client {
         return User.create(user);
     }
 
+    async modifyUser(body) {
+
+        return User.update(
+            //Datos que cambiamos
+            {
+                isAdmin: body.isAdmin,
+                country: body.country,
+                city: body.city
+            },
+            //Donde
+            { where: {id: body.id}}
+
+        )
+    }
+
+    async deleteUser(id){
+
+        return User.destroy({where: {id: id}});
+    }
+
 }
 
 
