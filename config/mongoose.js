@@ -3,7 +3,7 @@ const QUERY_STRING = "mongodb+srv://reservas:reservas@reservas.ih0fj.mongodb.net
 
 // Connection to DB
 const db = mongoose.connect(QUERY_STRING,
-    {useNewUrlParser: true, useUnifiedTopology: true})
+    {useNewUrlParser: true, useCreateIndex: true,useUnifiedTopology: true})
 .then(console.log('Conectado a la base de datos'))
 .catch((error) => console.log(error));
 
